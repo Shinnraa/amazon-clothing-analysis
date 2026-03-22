@@ -206,7 +206,15 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 # Ignore data folder
-data/
 *.db
 *.csv
 *.zip
+
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+data/sample/*
+!data/sample/.gitkeep
