@@ -206,10 +206,7 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 # Ignore data folder
-*.db
-*.csv
-*.zip
-
+# --- DỮ LIỆU---
 data/raw/*
 !data/raw/.gitkeep
 
@@ -218,3 +215,20 @@ data/processed/*
 
 data/sample/*
 !data/sample/.gitkeep
+
+# Chặn tất cả các định dạng file dữ liệu nặng
+*.db
+*.csv
+*.parquet
+*.zip
+*.gz
+*.jsonl
+
+# --- ĐẦU RA (OUTPUTS) ---
+# Chặn các biểu đồ và kết quả xuất ra
+outputs/figures/*
+!outputs/figures/.gitkeep
+
+# --- FILE CẤU HÌNH CÁ NHÂN ---
+.env
+metadata.db
